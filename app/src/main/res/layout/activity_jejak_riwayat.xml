@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".JejakRiwayat">
+
+    <TextView
+        android:id="@+id/headerRYT"
+        android:background="@drawable/bg_home"
+        android:paddingTop="30dp"
+        android:paddingLeft="12dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Daftar Lokasi"
+        />
+
+    <TextView
+        android:layout_below="@+id/headerRYT"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="12dp"
+        android:clickable="true"
+        android:textColor="#000"
+        android:id="@+id/TxtKlik"
+        android:text="Klik disini untuk melihat semua riwayat di map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TxtKlik"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>

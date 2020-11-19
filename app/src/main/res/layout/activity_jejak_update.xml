@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".JejakUpdate">
+
+    <EditText
+        android:id="@+id/etNamaUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nama Lokasi" />
+
+    <EditText
+        android:id="@+id/etKotaUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nama Kota" />
+
+    <EditText
+        android:id="@+id/etNegaraUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nama Negara" />
+
+    <EditText
+        android:id="@+id/etTglUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Tanggal"/>
+
+    <EditText
+        android:id="@+id/etKetUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Keterangan"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textSize="15sp"
+        android:text="Koordinat :"
+        />
+
+    <TextView
+        android:id="@+id/etLatUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:text="Lat" />
+
+    <TextView
+        android:id="@+id/etLotUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:text="lot" />
+
+    <ImageView
+        android:id="@+id/etFotoUp"
+        android:clickable="true"
+        android:layout_width="123dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_photo_camera_black_24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="10dp"
+        android:text="NB: Foto tidak boleh lebih dari 2MB" />
+
+    <Button
+        android:background="@drawable/button_custom1"
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE" />
+
+</LinearLayout>
